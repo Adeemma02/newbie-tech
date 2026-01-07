@@ -19,9 +19,17 @@
             </section>
         </div>
     </div>
-    <script src="node_modules/reveal.js/dist/reveal.js"></script>
-    <script>
-        Reveal.initialize();
-    </script>
+    script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> <!-- Load core HLJS first -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/highlight.min.js"></script> <!-- Then the plugin -->
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    transition: 'slide',
+    slideNumber: 'c/t',
+    plugins: [ RevealHighlight ]
+  });
+</script>
 </body>
 </html>
